@@ -1,0 +1,242 @@
+/* Header and Navigation Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    margin-top:20px;
+}
+
+.logo h1 {
+    color: #6295A2;
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #578E7E;
+}
+
+.sign-in-btn {
+    background-color: #578E7E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: #457d6e;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #578E7E; /* restaurant color changeable */
+}
+
+.restaurant {
+    margin-bottom: 30px;
+}
+
+.restaurant h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #F5ECD5;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.menu-item img:hover {
+    transform: scale(1.2);
+}
+
+.menu-item h3 {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.rating {
+    color: gold;
+    margin-bottom: 5px;
+}
+
+/* .add-button {
+    display: inline-block;
+    background-color: #578E7E;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #457d6e;
+    transform: scale(1.05);
+} */
+
+/* Add to Cart Button Styles */
+.add-button {
+    display: inline-block;
+    background-color: #578E7E; /* Matched to image */
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top:10px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #457d6e;
+    transform: scale(1.05);
+}
+
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #578E7E;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #578E7E;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.9em;
+}

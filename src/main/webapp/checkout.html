@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Checkout</div>
+
+        <div class="section">
+            <h2>Delivery Address</h2>
+            <div class="address-box">
+                <strong>Home</strong><br>
+                945 Main Street, Apartment 2B<br>
+                Hyderabad, Telangana 500081<br>
+                +91 94276 07648
+            </div>
+            <div class="address-box">
+                <strong>Work</strong><br>
+                456 Tech Park, Building C<br>
+                Hyderabad, Telangana 500032<br>
+                +91 93281 53924
+            </div>
+            <div class="add-new">+ Add New Address</div>
+        </div>
+
+        <div class="section">
+            <h2>Order Summary</h2>
+            <div class="order-summary">
+                <div class="order-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbeJnA8rVCCr3nQoHh3_ceraKhAK8DiDhLdQ&s" alt="Margherita Pizza">
+                    <div>Margherita Pizza<br>Quantity: 1</div>
+                    <div>₹299</div>
+                </div>
+                <div class="order-item">
+                    <img src="https://www.asiakingtravel.com/cuploads/files/tub-tim-krob-thai-desserts(1).jpg" alt="tub-tim-krob">
+                    <div>Tub-Tim-Krob<br>Quantity: 1</div>
+                    <div>₹600</div>
+                </div>
+                <hr>
+                <div class="order-item">
+                    <div>Subtotal:</div>
+                    <div>₹899</div>
+                </div>
+                <div class="order-item">
+                    <div>Delivery Fee:</div>
+                    <div>₹40</div>
+                </div>
+                <div class="order-item">
+                    <div>Taxes:</div>
+                    <div>₹72</div>
+                </div>
+                <div class="total">Total: ₹1,011</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Payment Method</h2>
+            <div class="payment-method">
+                <label><input type="radio" name="payment" value="credit-card" onclick="showCardDetails()"> Credit/Debit/ATM Card</label>
+                <div class="card-details" id="card-details">
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Valid Thru (MM/YY)">
+                    <input type="password" placeholder="CVV">
+                    <button class="button">Pay</button>
+                </div>
+                <label><input type="radio" name="payment" value="net-banking" onclick="hideCardDetails()"> Net Banking</label>
+                <label><input type="radio" name="payment" value="wallets" onclick="hideCardDetails()"> Wallets</label>
+                <label><input type="radio" name="payment" value="upi" onclick="hideCardDetails()"> UPI</label>
+                <label><input type="radio" name="payment" value="cod" onclick="hideCardDetails()"> Cash on Delivery</label>
+            </div>
+        </div>
+
+        <div>
+            <button class="button">Place Order</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+

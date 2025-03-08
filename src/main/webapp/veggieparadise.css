@@ -1,0 +1,75 @@
+body {
+            font-family: Arial, sans-serif;
+           
+        }
+        h1{
+            text-align:center;
+            color:#578E7E; /*restaurnt color changable*/
+        }
+        .restaurant {
+            margin-bottom: 30px;    
+        }
+        .restaurant h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-row {
+            display: flex;
+            justify-content: space-around; /* Space out items evenly */
+            align-items: center; /* Align items vertically */
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            gap: 10px; /* Space between items */
+        }
+        .menu-item {
+            flex: 1 1 calc(33.33% - 20px); /* Ensures 3 items per row */
+            max-width: 300px; /* Optional: Ensures items don’t stretch too much */
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+        .menu-item:hover{
+            background-color:#F5ECD5; /* change the background color when hovering over the item*/
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius:10px;
+            
+        }
+        .menu-item img:hover{
+            transform:scale(1.2);
+        }
+        .menu-item h3 {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .menu-item p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        .rating {
+            color: gold;
+            margin-bottom: 5px;
+        }
+        .add-button {
+            display: inline-block;
+            background-color: #578E7E;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* handle long description*/
+        .description{
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }

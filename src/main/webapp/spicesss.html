@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Hub</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-container {
+        position: relative;
+        width: 90%; /* Increased width for better alignment with headings */
+        margin: 20px auto; /* Center the container */
+    }
+
+    .hero {
+        width: 100%;
+        height: 250px; /* Increased height for better visibility */
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx23A6ZJT8rWHne0SAzeqSX1JU2bcHM_OBkw&s") no-repeat center center;
+        background-size: cover;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hero:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .restaurant {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .menu-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-item {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .menu-item:hover {
+        background-color: #F5ECD5;
+    }
+
+    .menu-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .menu-item img:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item h3 {
+        font-size: 1.1em;
+        margin: 5px 0;
+    }
+
+    .menu-item p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+
+    .rating {
+        color: gold;
+        margin-bottom: 5px;
+    }
+
+    .add-button {
+        display: inline-block;
+        background-color: #28a745;
+        color: white;
+        text-align: center;
+        padding: 5px 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Restaurant Menu</h1>
+                <h2>Spice Hub</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spice Hub Menu -->
+    <div class="restaurant">
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZqf5GFBlliNfia2E4JSFVtgx-ZO8ndE8t4w&s" alt="Indian Chicken Biriyani">
+                <h3>Biriyani</h3>
+                <div class="rating">★★★★★ 5.0</div>
+                <p>Price: ₹400</p>
+                <a href="#" class="add-button">Add to Cart</a>
+            </div>
+            <!-- Additional menu items can be added here -->
+        </div>
+    </div>
+</body>
+</html>

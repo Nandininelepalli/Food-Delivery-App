@@ -1,0 +1,392 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  
+/* Header and Navigation Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    margin-top:20px;
+}
+
+.logo h1 {
+    color: #6295A2;
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #578E7E;
+}
+
+.sign-in-btn {
+    background-color: #578E7E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: #457d6e;
+}
+
+body{
+      background-color: #f5f5f5;
+    }
+
+.container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px; /* Rounded corners for the page */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+.cart-header{
+      background-color: #578E7E;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px; /* Set a specific height */
+      position: relative;
+      border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+      }
+
+.cart-header a {
+      position: absolute;
+      left: 20px;
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      }
+
+.cart-header h1 {
+      font-size: 28px; /* Increased font size */
+      }
+
+.cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+      border-bottom: 1px solid #eee;       
+      }
+
+.cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      }
+
+.item-details {
+      flex-grow: 1;
+      margin-left: 15px;
+      }
+
+.item-details h3 {
+      margin-bottom: 5px; /* Spacing between item name and restaurant name */
+      }
+
+.restaurant-name {
+      color: #888;
+      font-size: 14px;
+      }
+
+.action-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+      }
+
+.quantity-controls {
+      display: flex;
+      align-items: center;
+      }
+
+.quantity-btn {
+      background: #578E7E;
+      color: white;
+      border: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      }
+
+.quantity {
+	  margin: 0 10px;
+      }
+
+.price {
+      color: #333;
+      font-weight: bold;
+      }
+
+.remove-btn {
+      color: #ff4444;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      }
+
+.cart-summary {
+      margin-top: 20px;
+      padding: 20px 30px;
+      border-top: 1px solid #eee;
+      border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+      }
+
+.summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      }
+
+.total-row {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      }
+
+.checkout-btn {
+      background: #578E7E;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      }
+
+.checkout-btn:hover {
+      background: #467a6d;
+      }
+      
+      /* Ensure parent div takes full width for proper centering */
+.add-more-items {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Aligns items in center */
+    text-align: center;
+    width: 100%; /* Ensures it spans full width */
+    margin-top: 20px;
+}
+
+/* Style for the buttons inside .add-more-items */
+.add-more-items a {
+    background-color: #578E7E; /* Greenish background */
+    color: white; /* White text */
+    padding: 12px 25px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block; /* Ensures proper button appearance */
+    text-align: center;
+    min-width: 200px; /* Ensures button has a visible size */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.add-more-items a:hover {
+    background-color: #467a6d; /* Darker shade on hover */
+}
+
+/* Ensure the empty cart message is also centered */
+.yourcart {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+      
+ /* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #578E7E;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #578E7E;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.9em;
+}     
+      
+      
+      
+      
+ /* .add-more-items {  first correct code
+      background: #578E7E;
+      justify-content: center; 
+      align-items: center;
+      text-decoration: none; 
+      color: white;
+      border: none;
+      width: 50%;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      }
+     
+      
+      
+      
+      
+ .yourcart{
+      background: #578E7E;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      } */
+   
+
+      
+ 
+ 
+ 
+ 
+ /* .btn {
+    display: flex;
+    justify-content: center; Centers the button horizontally
+    align-items: center; Centers the button vertically
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-more-items.btn a {
+    background: #578E7E;
+    color: white; White text
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none; Removes underline
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.add-more-items a:hover {
+    background: #467a6d;
+} */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
